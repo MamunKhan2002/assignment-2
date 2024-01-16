@@ -2,26 +2,41 @@
 
     .section-container,
     .banner-container .select-form,
-    .popular-tours-section
-     {
+    .popular-tours-section,
+    .perfect-place-container {
         flex-direction: column;
     }
-    .destination-container{
+
+    .destination-container {
         grid-template-columns: 1fr;
         grid-template-areas:
-        "a"
-        "b"
-        "c"
-        "d"
-        "e"
-        "f"
-        "g"
-    ;
+            "a"
+            "b"
+            "c"
+            "d"
+            "e"
+            "f"
+            "g"
+        ;
     }
+
+    .why-choose-Section .why-choose-card-container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "h"
+            "m"
+            "p"
+        ;
+    }
+    .support-container{
+        grid-template-columns: 1fr;
+    }
+
     .banner-container .select-form {
         height: 288px;
         width: 90%;
     }
+
     input[type="text"],
     .search-btn,
     #select-type {
@@ -29,14 +44,12 @@
     }
 
     .section-container .user-box,
-    .popular-tours-section .section-content
-     {
+    .popular-tours-section .section-content {
         width: 100%;
     }
 
     .section-container,
-    .popular-tours-section
-     {
+    .popular-tours-section {
         gap: 30px;
     }
 
@@ -58,19 +71,39 @@
     .section-container .save-up .site-box a {
         font-size: .80rem;
     }
+    .perfect-place-container video{
+        height: 100%;
+        width: 100%;
+    }
 }
 
 @media screen and (min-width:576px) and (max-width:992px) {
+
     .section-container,
     .banner-container .select-form,
-    .popular-tours-section 
-     {
+    .popular-tours-section,
+    .perfect-place-container {
         flex-direction: column;
     }
+
+    .why-choose-Section .why-choose-card-container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "h"
+            "m"
+            "p"
+        ;
+    }
+    .support-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
     .banner-container .select-form {
         height: 288px;
         width: 90%;
     }
+
     input[type="text"],
     .search-btn,
     #select-type {
@@ -78,15 +111,17 @@
     }
 
     .section-container .user-box,
-    .popular-tours-section .section-content
-     {
+    .popular-tours-section .section-content {
         width: 100%;
     }
 
     .section-container,
-    .popular-tours-section
-     {
+    .popular-tours-section {
         gap: 30px;
+    }
+    .perfect-place-container video{
+        height: 100%;
+        width: 100%;
     }
 }
 

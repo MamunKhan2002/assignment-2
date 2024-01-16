@@ -6,7 +6,18 @@
      {
         flex-direction: column;
     }
-
+    .destination-container{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "a"
+        "b"
+        "c"
+        "d"
+        "e"
+        "f"
+        "g"
+    ;
+    }
     .banner-container .select-form {
         height: 288px;
         width: 90%;

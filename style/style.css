@@ -17,6 +17,7 @@
     font-family: Mulish;
     font-size: 2.25rem;
     font-weight: 800;
+    cursor: pointer;
 }
 
 header {
@@ -88,16 +89,21 @@ header {
 input[type="text"],
 .search-btn,
 #select-type,
-.popular-tours-btn
-{
+.popular-tours-btn {
     outline: 0;
     border: 0;
     border-radius: 8px;
 }
+
 .section-container .save-up img,
-.popular-tour-img >img{
+.popular-tour-img>img,
+.destination-container .img-card img {
     width: 100%;
     height: 100%;
+}
+
+.destination-section .gallery-title{
+    text-align: center;
 }
 
 
@@ -164,6 +170,7 @@ input[type="text"],
     width: 174px;
     padding-left: 16px;
     /* padding-right: 20px; */
+    cursor: pointer;
 }
 
 
@@ -180,6 +187,7 @@ input[type="text"],
     font-family: Mulish;
     font-size: 1rem;
     font-weight: 700;
+    cursor: pointer;
 }
 
 .banner-container .search-btn .fa-magnifying-glass {
@@ -201,7 +209,8 @@ input[type="text"],
 .popular-tours-section .section-content .popular-tour-describe {
     margin-block: 24px;
 }
-.popular-tours-section .section-content .popular-tour-describe-two{
+
+.popular-tours-section .section-content .popular-tour-describe-two {
     color: #5A5A5D;
     margin-block: 25px 38px;
 }
@@ -225,6 +234,74 @@ input[type="text"],
     font-family: Mulish;
     font-size: 1.20rem;
     font-weight: 800;
+}
+
+/*  */
+.destination-section >p{
+    margin-inline: auto;
+    max-width: 643px;
+    text-align: center;
+    margin-block: 24px 48px;
+}
+.destination-container .img-card {
+    position: relative;
+}
+
+.destination-container .img-card>p {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50% );
+    /* transform: translateY(-50%); */
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 1.75rem;
+    font-weight: 800;
+}
+
+.destination-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 24px;
+    grid-template-areas:
+        "a a a a a a b b b b b b"
+        "c c c c d d d d d e e e"
+        "f f f f f g g g g g g g"
+    ;
+}
+
+.destination-section {
+    /* height: 100Vh; */
+    margin-block: 100px;
+}
+
+#img-card-1 {
+    grid-area: a;
+}
+
+#img-card-2 {
+    grid-area: b;
+}
+
+#img-card-3 {
+    grid-area: c;
+}
+
+#img-card-4 {
+    grid-area: d;
+}
+
+#img-card-5 {
+    grid-area: e;
+}
+
+#img-card-6 {
+    grid-area: f;
+}
+
+#img-card-7 {
+    grid-area: g;
 }
 
 /*-------- User Form Box Design Start Here --------*/

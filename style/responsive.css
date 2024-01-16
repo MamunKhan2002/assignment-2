@@ -75,6 +75,18 @@
         height: 100%;
         width: 100%;
     }
+
+    .discount-container .discount-icon-content-container,
+    .deals-discount-sec .discount-container .discount-icon-content-container-middle
+    {
+        padding-inline: 20px;
+        margin-inline: 20px;
+    }
+    .deals-discount-sec .discount-container-img-1,
+    .deals-discount-sec .discount-container-img-2,
+    .deals-discount-sec .discount-container-img-3{
+        height: 100%;
+    }
 }
 
 @media screen and (min-width:576px) and (max-width:992px) {
@@ -123,6 +135,11 @@
         height: 100%;
         width: 100%;
     }
+    .discount-container .discount-icon-content-container,
+    .deals-discount-sec .discount-container .discount-icon-content-container-middle
+    {
+        margin-inline: 40px;
+    }
 }
 
 
@@ -135,5 +152,4 @@
     .hamburger-menu .fa-solid {
         display: block;
     }
-
 }
